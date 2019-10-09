@@ -1,0 +1,94 @@
+body{
+	font-family: 'Arial', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: rgb(30, 30, 30);
+	color: white;
+}
+
+header h1{
+	font-size: 45px;
+	text-transform: capitalize;
+	color: tomato;
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+	margin: 10px 0;
+}
+
+header h3{
+	margin: 0;
+}
+
+#languages{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgb(50, 50, 50);
+	color: white;
+	padding: 20px;
+}
+
+.item{
+	box-sizing: border-box;
+	padding: 20px 30px;
+	margin: 10px;
+	line-height: 50px;
+	font-size: 25px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.message{
+	padding: 20px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.message h2{
+	font-family: 'Consolas', monospace;
+	text-align: center;
+}
+
+.message h2:before{
+	content: 'File: ';
+}
+
+.message pre{
+	display: block;
+	/*width: 50%;*/
+	padding: 20px;
+	background-color: #363636;
+	color: white;
+	border-left: 10px solid tomato;
+	font-family: 'Consolas', monospace;
+	margin: auto;
+}
+
+.pink{
+	color: #f34b7d;
+}
+
+.green{
+	color: #8bc34a;
+}
+
+.blue{
+	color: #00bcd4;
+}
+
+.yellow{
+	color: #f1e05a;
+}
+
+.orange{
+	color: #ff9800;
+}
