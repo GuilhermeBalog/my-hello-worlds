@@ -37,26 +37,21 @@ const languages = [
 	}
 ]
 
-const defaultFileName = "hello-world"
+for(const language of languages) {
 
-function changeLanguage(language){
-	document.getElementById('pageTitle').style.color = language.color
-	document.getElementById('filename').innerHTML = `${defaultFileName}.${language.extension}`
-	document.getElementById('code').innerHTML = `<b>${language.name}</b>\n${language.code}`	
-	document.getElementById('code').style.borderColor = language.color
+	const filename = document.createElement('h2')
+	filename.className = 'filename'
+	filename.innerHTML = `hello-world.${language.extension}`
+
+	const code = document.createElement('pre')
+	code.className = 'code'
+	code.innerHTML = `<strong>${language.name}</strong>\n${language.code}`
+	code.style.borderColor = language.color
+
+	const file = document.createElement('div')
+	file.className = 'file'
+	file.appendChild(filename)
+	file.appendChild(code)
+
+	document.querySelector('main').appendChild(file)
 }
-
-for (var i = 0; i < languages.length; i++) {
-	const language = languages[i]
-
-	const div = document.createElement('div')
-	div.classList.add("item")
-	div.innerHTML = language.name
-	div.onmouseover = function(){
-		changeLanguage(language)
-	}
-
-	document.getElementById('languages').append(div)
-}
-
-changeLanguage(languages[0]);
