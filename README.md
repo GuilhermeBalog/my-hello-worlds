@@ -1,20 +1,22 @@
 # My Hello Worlds
 
-This is a web page with all languages that I know:
+👨🏾‍💻 This is a web page with some languages that I know:
 
 - [HTML](https://github.com/GuilhermeBalog/tic-tac-toe)
 - [CSS](https://github.com/GuilhermeBalog/guilhermebalog.github.io)
 - [JavaScript](https://github.com/GuilhermeBalog/capivara-chat)
 - [Python](https://github.com/GuilhermeBalog/exercicios-de-python)
 - [C++](https://github.com/GuilhermeBalog/exercicios-de-cpp)
-- Java
+- [Java](https://github.com/GuilhermeBalog/gerador-de-relatorios)
+
+**Available at:** [guilhermebalog.ga/my-hello-worlds](https://guilhermebalog.ga/my-hello-worlds)
 
 ## Getting Started
 
-- Clone the repositorie with
+- Clone the repository with
 
 ```bash
-git clone https://github.com/GuilhermeBalog/minesweeper.git
+git clone https://github.com/GuilhermeBalog/my-hello-worlds.git
 ```
 
 - Open the `index.html` file on your favorite browser!
