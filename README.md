@@ -1,5 +1,7 @@
 # My Hello Worlds
 
+![Thumbnail](thumb.png)
+
 👨🏾‍💻 This is a web page with some languages that I know:
 
 - [HTML](https://github.com/GuilhermeBalog/tic-tac-toe)
