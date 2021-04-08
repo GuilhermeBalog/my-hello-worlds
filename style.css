@@ -132,6 +132,7 @@ footer p {
   padding: 1rem;
   margin: 0 auto;
   max-width: 500px;
+  text-align: center;
 }
 
 footer p span {
