@@ -11,50 +11,38 @@ body {
 }
 
 header {
-  padding: 10px;
   background-color: #1e1e1e;
   color: white;
+}
+
+header > div {
+  padding: 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 header img {
   height: 4rem;
-  margin-right: 1.5em;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
   color: white;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
-  margin: 10px 0;
+  text-align: center;
+  font-weight: 800;
 }
 
 main {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 13px;
-}
-
-@media (min-width: 2000px) {
-  main {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-}
-
-@media (min-width: 1400px) {
-  main {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  main {
-    grid-template-columns: 1fr;
-  }
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (max-width: 500px) {
@@ -73,18 +61,6 @@ main {
   header h1 {
     font-size: 1.7rem !important;
   }
-}
-
-.code {
-  display: block;
-  padding: 20px;
-  background-color: #363636;
-  color: white;
-  border-left: 10px solid tomato;
-  font-family: "Consolas", monospace;
-  font-size: 1em;
-  tab-size: 4;
-  flex: 1;
 }
 
 code {
@@ -107,6 +83,7 @@ pre::before {
   top: -1.5em;
   border-radius: 8px 8px 0 0;
   color: #fff;
+  font-weight: 600;
 }
 
 pre[data-extension]::before {
@@ -126,20 +103,46 @@ pre::after {
   content: "";
 }
 
+pre:nth-child(1) {
+  margin-top: 1.5em;
+}
+
 pre {
   display: block;
   position: relative;
-  /* 	color: #fcfcfc;
-	background-color: #282a36; */
   border-radius: 0 0 8px 8px;
-  /* 	padding: 16px; */
   font-family: "Fira Code", monospace;
-  margin-top: 2em;
+  margin-top: 2.5em;
   tab-size: 1rem;
   flex: 1;
 }
 
 pre code {
   background: none;
-  /* 	padding: 50px; */
+}
+
+footer {
+  font-size: 0.75rem;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+footer p {
+  font-weight: 300;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+footer p span {
+  color: red;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer strong {
+  font-weight: 500;
 }
